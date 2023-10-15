@@ -18,6 +18,7 @@ class BasicPeriodicTemplate(BehaviorModelExecutor):
     def ext_trans(self,port, msg):
         if port == "start":
             self._cur_state = "Generate"
+        self.ext_action()
 
     def output(self):
         return  self.out_action()
