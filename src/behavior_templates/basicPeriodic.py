@@ -8,7 +8,7 @@ from abc import abstractmethod
 
 class basicPeriodic(BasicPeriodicTemplate):
     def __init__(self, i_time, d_time, name, ename, freq):
-        super().__init__(i_time, d_time, name, ename)
+        super().__init__(i_time, d_time, name, ename, freq)
 
     def ext_action(self, port):
         pass
